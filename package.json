@@ -4,11 +4,11 @@
   "private": true,
   "proxy": "http://localhost:8000",
   "scripts": {
-    "start": "bash start.sh",
+    "start": "node app.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev:api": "SERVERLESS_PORT=8000 bash start.sh"
+    "dev:api": "SERVERLESS_PORT=8000 node app.js"
   },
   "eslintConfig": {
     "extends": [
@@ -38,7 +38,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "@stormkit/serverless": "^0.9.10"
